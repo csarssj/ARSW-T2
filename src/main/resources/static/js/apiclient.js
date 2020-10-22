@@ -1,4 +1,5 @@
 apiclient= (function () {
+            //var url = "http://localhost:8080/weather"
             var url = "https://parcialweather-2.herokuapp.com/weather"
             var  getWeatherByCity = function(city,callback){
                 $.getJSON(url+"/"+city,(data)=>{

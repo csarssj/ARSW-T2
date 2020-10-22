@@ -21,6 +21,10 @@
         border: 2px solid #ccc;
         text-align: center;
         }
+        #map-canvas {
+          width: 100%;
+          height: 100%;
+        }
 		body, html { height:100%;
             margin:0;
             padding:0;
@@ -29,9 +33,8 @@
         }
     </style>
 
-
 </head>
-<body >
+<body onload="app.initMap()">
 <div class = "padre">
     <h1>Open Weather</h1>
     <form action="/action_page.php">
@@ -53,7 +56,7 @@
         </tbody>
     </table>
 </div>
-
+<div id="map-canvas"></div>
 </body>
 <script src="js/apiclient.js"></script>
 <script src="js/apimock.js"></script>
