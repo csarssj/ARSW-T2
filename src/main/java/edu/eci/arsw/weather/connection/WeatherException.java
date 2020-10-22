@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.eci.arsw.weather.persistence;
+package edu.eci.arsw.weather.connection;
 
 /**
  *
- * @author cristian
+ * @author ceseg
  */
-public class CinemaPersistenceException extends Exception{
+public class WeatherException extends Exception{
 
-    public CinemaPersistenceException(String message) {
+    public WeatherException(String message) {
         super(message);
     }
 
-    public CinemaPersistenceException(String message, Throwable cause) {
+    public WeatherException(String message, Throwable cause) {
         super(message, cause);
-    } 
+    }
     
 }
