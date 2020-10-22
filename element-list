@@ -1,0 +1,7 @@
+edu.eci.arsw.weather
+edu.eci.arsw.weather.cache
+edu.eci.arsw.weather.connection
+edu.eci.arsw.weather.connection.impl
+edu.eci.arsw.weather.controllers
+edu.eci.arsw.weather.services
+edu.eci.arsw.weather.test

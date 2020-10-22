@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Cinema bookings</title>
+    <title>Open Weather</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -21,6 +21,12 @@
         border: 2px solid #ccc;
         text-align: center;
         }
+		body, html { height:100%;
+            margin:0;
+            padding:0;
+            width:100%;
+            background-color:silver;
+        }
     </style>
 
 
@@ -31,16 +37,16 @@
     <form action="/action_page.php">
         <label for="fcity">Ciudad :</label>
         <input type="text" id="fcity" name="fcity" value="ciudad">
-        <button type="button" class="btn btn-primary" onclick="" >Buscar</button>
+        <button type="button" class="btn btn-primary" onclick="app.getWeatherByCity($('#fcity').val())" >Buscar</button>
     </form>
     <table class="table table-dark" id = "table">
         <thead>
         <tr>
-            <th scope="col">dato 1</th>
-            <th scope="col">dato 2</th>
-            <th scope="col">dato 3</th>
-            <th scope="col">dato 4</th>
-            <th scope="col">dato 5</th>
+            <th scope="col">Temperatura</th>
+            <th scope="col">Temperatura minima</th>
+            <th scope="col">Temperatura maxima</th>
+            <th scope="col">Humedad</th>
+            <th scope="col">Presión</th>
         </tr>
         </thead>
         <tbody id = "body">
@@ -49,4 +55,7 @@
 </div>
 
 </body>
+<script src="js/apiclient.js"></script>
+<script src="js/apimock.js"></script>
+<script src="js/app.js"></script>
 </html>

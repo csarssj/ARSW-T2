@@ -13,6 +13,14 @@ import java.net.URL;
 @Service
 public class HttpConnectionImpl implements HttpConnection {
 
+    /**
+     * Se realiza la conexion y peticion de datos a traves del protocolo HTTP
+     *
+     * @param city
+     * @return
+     * @throws WeatherException
+     * @throws IOException
+     */
 	
 	@Override
 	public String getWeatherByCity(String city)  throws WeatherException, IOException {
